@@ -1,6 +1,6 @@
 def DFS(L, idx):
     if L==r:
-        results.append(' '.join(map(str,result)))
+        print(' '.join(map(str,result)))
     else:
         for i in range(idx,nums[0]):
                 result[L]=nums[1+i]
@@ -14,9 +14,7 @@ if __name__=='__main__':
         
         r=6
         result=[0]*r
-        results=[]
 
         DFS(0,0)
-        print('\n'.join(results))
         print()
 
